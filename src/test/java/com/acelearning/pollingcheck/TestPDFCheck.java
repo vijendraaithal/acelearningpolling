@@ -47,7 +47,7 @@ public class TestPDFCheck {
 		
 		driver.switchTo().frame("docViewerIframe");
 
-		String testValue = driver.findElement(By.xpath("//div[text()='ELECTROSTATIC']")).getAttribute("dir");
+		String testValue = driver.findElement(By.xpath("//div[text()='*******************TEST FAILURE *****************ELECTROSTATIC']")).getAttribute("dir");
 		if (testValue.equals("ltr"))
 			testValue = "Found the ELECTROSTATIC TEXT IN PDF";
 		else 
