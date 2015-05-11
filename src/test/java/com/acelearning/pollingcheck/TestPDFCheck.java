@@ -12,7 +12,7 @@ public class TestPDFCheck {
 	@Test
 	public void testPDF() throws InterruptedException {
 		WebDriver driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 		System.out.println("Started the actual test to check if Services are opening the page in stipulated time");
 		driver.get("http://learn.acedigilearn.com/login");
