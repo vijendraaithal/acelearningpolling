@@ -54,6 +54,14 @@ public class TestPDFCheck {
 			testValue = "DID NOT FIND the ELECTROSTATIC TEXT IN PDF";
 		System.out.println(testValue);
 		
+		Thread.sleep(5000);
+		driver.switchTo().defaultContent();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//*[@id='instUserDetails']/span[2]")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//*[@id='instUserDetails']/span[2]/div/div/div[7]")).click();
+		Thread.sleep(5000);
+		
 		
 		System.out.println("Ending the test, found everything to be OK and opening in stipulated time");
 		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
